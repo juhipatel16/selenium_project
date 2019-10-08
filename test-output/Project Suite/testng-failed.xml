@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="methods" name="Failed suite [Project Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="methods" name="Hybrid Framework(failed)">
+    <classes>
+      <class name="com.Testcases.MyAccountPageTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="SetUp"/>
+          <include name="MyAccountPageTitleTest"/>
+          <include name="signInBtnClickTest"/>
+        </methods>
+      </class> <!-- com.Testcases.MyAccountPageTest -->
+      <class name="com.Testcases.SignUpPageTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="clickCreateAccountTest"/>
+          <include name="clickLink"/>
+          <include name="SetUp"/>
+          <include name="signUpPageTitleTest"/>
+        </methods>
+      </class> <!-- com.Testcases.SignUpPageTest -->
+    </classes>
+  </test> <!-- Hybrid Framework(failed) -->
+</suite> <!-- Failed suite [Project Suite] -->

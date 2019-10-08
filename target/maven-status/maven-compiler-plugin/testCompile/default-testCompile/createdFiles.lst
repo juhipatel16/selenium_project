@@ -1,0 +1,5 @@
+com\Testcases\SignOutPageTest.class
+com\Testcases\MyAccountPageTest.class
+com\Testcases\HomePageTest.class
+com\Testcases\SignInPageTest.class
+com\Testcases\SignUpPageTest.class

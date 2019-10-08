@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Wallmart Project Test Suite">
+
+<listeners>
+	<listener class-name="ExtentReportListener.ExtentReporterNG"/>
+</listeners>
+
+  <test name="Hybrid Framework" allow-return-values="true">
+    <classes>
+       <class name="com.Testcases.SignUpPageTest"/>
+      <class name="com.Testcases.MyAccountPageTest"/> 
+      <class name="com.Testcases.SignInPageTest"/>
+       <class name="com.Testcases.HomePageTest"/>
+      <class name="com.Testcases.SignOutPageTest"/> 
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

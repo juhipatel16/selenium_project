@@ -1,0 +1,13 @@
+Page\HomePage.class
+Page\MyListPage.class
+Page\RecommendationPage.class
+Page\SignUpPage.class
+Page\MyAccountPage.class
+BaseClass\ParentClass.class
+Page\SignOutPage.class
+Util\TestUtil.class
+Page\SignInPage.class
+Page\ShoppingCartPage.class
+Page\ToysPage.class
+ExtentReportListener\ExtentReporterNG.class
+TestData\ExcelSheet.class

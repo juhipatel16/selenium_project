@@ -1,0 +1,21 @@
+# Created at 2019-10-05T10:51:29.614
+Picked up JAVA_TOOL_OPTIONS: -agentlib:jvmhook
+
+# Created at 2019-10-05T10:51:29.625
+Picked up _JAVA_OPTIONS: -Xrunjvmhook -Xbootclasspath/a:"C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\java_shared\classes\jasmine.jar"
+
+# Created at 2019-10-05T10:51:50.631
+WARNING: An illegal reflective access operation has occurred
+
+# Created at 2019-10-05T10:51:50.636
+WARNING: Illegal reflective access by org.dom4j.io.SAXContentHandler (file:/C:/Users/juhip/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar) to method com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$LocatorProxy.getEncoding()
+
+# Created at 2019-10-05T10:51:50.642
+WARNING: Please consider reporting this to the maintainers of org.dom4j.io.SAXContentHandler
+
+# Created at 2019-10-05T10:51:50.647
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created at 2019-10-05T10:51:50.653
+WARNING: All illegal access operations will be denied in a future release
+

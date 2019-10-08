@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Wallmart_Project_Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Wallmart Project Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Wallmart_Project_Test_Suite" class="navigator-link ">
+                    <span>C:\Users\juhip\eclipse-workspace\TestBase\src\main\resources\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Wallmart_Project_Test_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Wallmart_Project_Test_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Wallmart_Project_Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Wallmart_Project_Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Wallmart_Project_Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Wallmart_Project_Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">11 methods, 1 failed,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Wallmart_Project_Test_Suite" class="hide-methods failed suite-Wallmart_Project_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Wallmart_Project_Test_Suite -->
+                      <a href="#" panel-name="suite-Wallmart_Project_Test_Suite" class="show-methods failed suite-Wallmart_Project_Test_Suite"> (show)</a> <!-- show-methods failed suite-Wallmart_Project_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Wallmart_Project_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Wallmart_Project_Test_Suite" title="com.Testcases.SignOutPageTest" class="method navigator-link" hash-for-method="signOutTest">signOutTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Wallmart_Project_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Wallmart_Project_Test_Suite" class="hide-methods passed suite-Wallmart_Project_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Wallmart_Project_Test_Suite -->
+                      <a href="#" panel-name="suite-Wallmart_Project_Test_Suite" class="show-methods passed suite-Wallmart_Project_Test_Suite"> (show)</a> <!-- show-methods passed suite-Wallmart_Project_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Wallmart_Project_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Wallmart_Project_Test_Suite" title="com.Testcases.MyAccountPageTest" class="method navigator-link" hash-for-method="MyAccountPageTitleTest">MyAccountPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Wallmart_Project_Test_Suite" title="com.Testcases.SignUpPageTest" class="method navigator-link" hash-for-method="clickCreateAccountTest(dharap@gmail.com, 9.085432234E9, dhara, patel, Dh_1234, Dh_1234)">clickCreateAccountTest(dharap@gmail.com, 9.085432234E9, dhara, patel, Dh_1234, Dh_1234)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Wallmart_Project_Test_Suite" title="com.Testcases.SignUpPageTest" class="method navigator-link" hash-for-method="clickCreateAccountTest(test12@gmail.com, 8.907345678E9, test12, abcd, Test@123, Test@123)">clickCreateAccountTest(test12@gmail.com, 8.907345678E9, test12, abcd, Test@123, Test@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Wallmart_Project_Test_Suite" title="com.Testcases.SignUpPageTest" class="method navigator-link" hash-for-method="clickCreateAccountTest(juhi1234@gmail.com, 9.05872469E9, juhi, patel, Test@1234, Test@1234)">clickCreateAccountTest(juhi1234@gmail.com, 9.05872469E9, juhi, patel, Test@1234, Test@1234)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Wallmart_Project_Test_Suite" title="com.Testcases.HomePageTest" class="method navigator-link" hash-for-method="searchingTest">searchingTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Wallmart_Project_Test_Suite" title="com.Testcases.MyAccountPageTest" class="method navigator-link" hash-for-method="signInBtnClickTest">signInBtnClickTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Wallmart_Project_Test_Suite" title="com.Testcases.SignInPageTest" class="method navigator-link" hash-for-method="signInPageTitleTest">signInPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Wallmart_Project_Test_Suite" title="com.Testcases.SignInPageTest" class="method navigator-link" hash-for-method="signInTest">signInTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Wallmart_Project_Test_Suite" title="com.Testcases.SignOutPageTest" class="method navigator-link" hash-for-method="signInTest">signInTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Wallmart_Project_Test_Suite" title="com.Testcases.SignUpPageTest" class="method navigator-link" hash-for-method="signUpPageTitleTest">signUpPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Wallmart_Project_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Wallmart_Project_Test_Suite" class="panel Wallmart_Project_Test_Suite">
+          <div class="suite-Wallmart_Project_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.Testcases.SignOutPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="signOutTest">
+                  </a> <!-- signOutTest -->
+                  <span class="method-name">signOutTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: Sign out
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-RE3TD97&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.2, capabilities: {desiredCapabilities: {acceptInsecureCerts: true, browserName: firefox}}, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191001234643, moz:headless: false, moz:processID: 13948, moz:profile: C:\Users\juhip\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 851e6320-1cdc-4564-8675-9fa3780160f7
+*** Element info: {Using=link text, value=Sign out}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at BaseClass.ParentClass.displaySignOutLink(ParentClass.java:69)
+	at com.Testcases.SignOutPageTest.signOutTest(SignOutPageTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Wallmart_Project_Test_Suite-class-failed -->
+          <div class="suite-Wallmart_Project_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Testcases.MyAccountPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MyAccountPageTitleTest">
+                  </a> <!-- MyAccountPageTitleTest -->
+                  <span class="method-name">MyAccountPageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signInBtnClickTest">
+                  </a> <!-- signInBtnClickTest -->
+                  <span class="method-name">signInBtnClickTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Wallmart_Project_Test_Suite-class-passed -->
+          <div class="suite-Wallmart_Project_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Testcases.SignOutPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="signInTest">
+                  </a> <!-- signInTest -->
+                  <span class="method-name">signInTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Wallmart_Project_Test_Suite-class-passed -->
+          <div class="suite-Wallmart_Project_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Testcases.SignInPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="signInPageTitleTest">
+                  </a> <!-- signInPageTitleTest -->
+                  <span class="method-name">signInPageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signInTest">
+                  </a> <!-- signInTest -->
+                  <span class="method-name">signInTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Wallmart_Project_Test_Suite-class-passed -->
+          <div class="suite-Wallmart_Project_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Testcases.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchingTest">
+                  </a> <!-- searchingTest -->
+                  <span class="method-name">searchingTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Wallmart_Project_Test_Suite-class-passed -->
+          <div class="suite-Wallmart_Project_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Testcases.SignUpPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickCreateAccountTest(dharap@gmail.com, 9.085432234E9, dhara, patel, Dh_1234, Dh_1234)">
+                  </a> <!-- clickCreateAccountTest(dharap@gmail.com, 9.085432234E9, dhara, patel, Dh_1234, Dh_1234) -->
+                  <span class="method-name">clickCreateAccountTest</span>
+                  <span class="parameters">(dharap@gmail.com, 9.085432234E9, dhara, patel, Dh_1234, Dh_1234)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickCreateAccountTest(test12@gmail.com, 8.907345678E9, test12, abcd, Test@123, Test@123)">
+                  </a> <!-- clickCreateAccountTest(test12@gmail.com, 8.907345678E9, test12, abcd, Test@123, Test@123) -->
+                  <span class="method-name">clickCreateAccountTest</span>
+                  <span class="parameters">(test12@gmail.com, 8.907345678E9, test12, abcd, Test@123, Test@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickCreateAccountTest(juhi1234@gmail.com, 9.05872469E9, juhi, patel, Test@1234, Test@1234)">
+                  </a> <!-- clickCreateAccountTest(juhi1234@gmail.com, 9.05872469E9, juhi, patel, Test@1234, Test@1234) -->
+                  <span class="method-name">clickCreateAccountTest</span>
+                  <span class="parameters">(juhi1234@gmail.com, 9.05872469E9, juhi, patel, Test@1234, Test@1234)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUpPageTitleTest">
+                  </a> <!-- signUpPageTitleTest -->
+                  <span class="method-name">signUpPageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Wallmart_Project_Test_Suite-class-passed -->
+        </div> <!-- panel Wallmart_Project_Test_Suite -->
+        <div panel-name="test-xml-Wallmart_Project_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\juhip\eclipse-workspace\TestBase\src\main\resources\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Wallmart Project Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;ExtentReportListener.ExtentReporterNG&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Hybrid Framework&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.Testcases.SignUpPageTest&quot;/&gt;
+      &lt;class name=&quot;com.Testcases.MyAccountPageTest&quot;/&gt;
+      &lt;class name=&quot;com.Testcases.SignInPageTest&quot;/&gt;
+      &lt;class name=&quot;com.Testcases.HomePageTest&quot;/&gt;
+      &lt;class name=&quot;com.Testcases.SignOutPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Hybrid Framework --&gt;
+&lt;/suite&gt; &lt;!-- Wallmart Project Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Wallmart_Project_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Wallmart Project Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Hybrid Framework (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Wallmart_Project_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Wallmart Project Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Wallmart_Project_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Wallmart Project Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Wallmart_Project_Test_Suite');
+function tableData_Wallmart_Project_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(11);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'searchingTest')
+data.setCell(0, 2, 'com.Testcases.HomePageTest')
+data.setCell(0, 3, 43526);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'signOutTest')
+data.setCell(1, 2, 'com.Testcases.SignOutPageTest')
+data.setCell(1, 3, 41967);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'signInBtnClickTest')
+data.setCell(2, 2, 'com.Testcases.MyAccountPageTest')
+data.setCell(2, 3, 6431);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'clickCreateAccountTest')
+data.setCell(3, 2, 'com.Testcases.SignUpPageTest')
+data.setCell(3, 3, 6257);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'clickCreateAccountTest')
+data.setCell(4, 2, 'com.Testcases.SignUpPageTest')
+data.setCell(4, 3, 5765);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'signInTest')
+data.setCell(5, 2, 'com.Testcases.SignOutPageTest')
+data.setCell(5, 3, 5114);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'clickCreateAccountTest')
+data.setCell(6, 2, 'com.Testcases.SignUpPageTest')
+data.setCell(6, 3, 4931);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'signInTest')
+data.setCell(7, 2, 'com.Testcases.SignInPageTest')
+data.setCell(7, 3, 880);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'signInPageTitleTest')
+data.setCell(8, 2, 'com.Testcases.SignInPageTest')
+data.setCell(8, 3, 96);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'MyAccountPageTitleTest')
+data.setCell(9, 2, 'com.Testcases.MyAccountPageTest')
+data.setCell(9, 3, 38);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'signUpPageTitleTest')
+data.setCell(10, 2, 'com.Testcases.SignUpPageTest')
+data.setCell(10, 3, 33);
+window.suiteTableData['Wallmart_Project_Test_Suite']= { tableData: data, tableDiv: 'times-div-Wallmart_Project_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Wallmart_Project_Test_Suite">
+              </div> <!-- times-div-Wallmart_Project_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Wallmart_Project_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Wallmart Project Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Wallmart_Project_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Wallmart_Project_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Testcases.SignUpPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">signUpPageTitleTest</span>
+                <span class="method-start">16698 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">16734 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">19519 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clickCreateAccountTest(juhi1234@gmail.com, 9.05872469E9, juhi, patel, Test@1234, Test@1234)</span>
+                <span class="method-start">36064 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">41831 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">43639 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clickCreateAccountTest(test12@gmail.com, 8.907345678E9, test12, abcd, Test@123, Test@123)</span>
+                <span class="method-start">59315 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">65573 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">68025 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clickCreateAccountTest(dharap@gmail.com, 9.085432234E9, dhara, patel, Dh_1234, Dh_1234)</span>
+                <span class="method-start">83465 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">88397 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Testcases.MyAccountPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">90522 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MyAccountPageTitleTest</span>
+                <span class="method-start">106388 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">106426 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">108419 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">signInBtnClickTest</span>
+                <span class="method-start">122487 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">128919 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Testcases.SignInPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">131965 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">signInPageTitleTest</span>
+                <span class="method-start">147294 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">147391 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">150166 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">signInTest</span>
+                <span class="method-start">164478 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">165359 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Testcases.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">167137 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchingTest</span>
+                <span class="method-start">183401 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">226928 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Testcases.SignOutPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">226930 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">signInTest</span>
+                <span class="method-start">237773 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">242887 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">245398 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">signOutTest</span>
+                <span class="method-start">256927 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">298900 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
