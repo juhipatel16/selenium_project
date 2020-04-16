@@ -44,7 +44,7 @@ public class MyAccountPage extends ParentClass
 	{
 		email.sendKeys("juhi1234@gmail.com");
 		password.sendKeys("Test@1234"); // forgotPassword.click();
-		checkBox.isSelected();
+		checkBox.click();
 		signInBtn.click();
 		driver.get(prop.getProperty("url"));
 				

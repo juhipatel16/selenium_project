@@ -3,22 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Testcases.SignOutPageTest">
+      <class name="com.Testcases.SignUpPageTest">
         <methods>
-          <include name="signOutTest"/>
-          <include name="setUp"/>
           <include name="afterMethod"/>
-        </methods>
-      </class> <!-- com.Testcases.SignOutPageTest -->
-      <class name="com.Testcases.HomePageTest">
-        <methods>
-          <include name="searchingTest"/>
-          <include name="paginationTest"/>
-          <include name="recommendationLinkTest"/>
-          <include name="afterMethod"/>
+          <include name="clickCreateAccountTest" invocation-numbers="0 1 2"/>
           <include name="SetUp"/>
         </methods>
-      </class> <!-- com.Testcases.HomePageTest -->
+      </class> <!-- com.Testcases.SignUpPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

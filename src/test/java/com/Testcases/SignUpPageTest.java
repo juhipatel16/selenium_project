@@ -31,6 +31,7 @@ public class SignUpPageTest extends ParentClass
 		signInLink();
 		sup = new SignUpPage();
 		myactpage = new MyAccountPage();
+	    
 	}
 	
 	@Test(priority = 1)
@@ -40,20 +41,22 @@ public class SignUpPageTest extends ParentClass
 		Assert.assertEquals(title, "Walmart Canada");
 	}
 
+	// to fetch data from excel sheet
 	@DataProvider
-	public Object[][] userData()
+	public Object[][] UserData()
 	{
 		Object result[][] = ExcelSheet.readExcelData("Usersheet");
 		return result;	
 	}
 	
-	@Test(priority = 2,dataProvider = "userData")
+	@Test(priority = 2,dataProvider = "UserData") // Excel sheet name
 	public void clickCreateAccountTest(String eid,String phno,String fname,String lname,String pwd,String cpwd)
 	{
 		driver.findElement(By.className("create-account-email")).sendKeys("juhi1234@gmail.com");
 		driver.findElement(By.xpath("//button[contains(text(),'Create my account')]")).click();
 
 		myactpage = sup.createMyAccountBtn(eid,phno,fname,lname,pwd,cpwd);
+		Assert.assertEquals(driver.getCurrentUrl(), "https://www.walmart.ca/my-account");
 	}
 	
 	@AfterMethod

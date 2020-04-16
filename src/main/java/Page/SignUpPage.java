@@ -58,7 +58,7 @@ public class SignUpPage extends ParentClass
 		lastname.sendKeys(lname);
 		password.sendKeys(pwd);
 		confirmpass.sendKeys(cpwd);
-		policyChkBox.isSelected();
+		policyChkBox.click();
 	//	subscribeChkBox.click();
 		createAccountBtn.submit();
 		
